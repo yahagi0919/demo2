@@ -55,6 +55,14 @@ p{
     box-shadow: 0 0 10px #00A6C4;
 }
 
+/* 以下.wrapper設定 */
+.wrapper{
+    width: 100%;
+    max-width: 80%;
+    min-width: 800px;
+    margin: 0 auto;
+}
+
 /* 以下headerビデオ */
 header{
     position: relative;
@@ -97,22 +105,25 @@ h1{
     justify-content: space-between;  
 }
 .gl-nav ul li a{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    text-shadow: 3px 3px #515b5679;
 }
 .gl-nav ul li a:hover{
     color: rgb(72, 80, 72);
 }
 .header-text{
-    width: 100%;
+    width: 80%;
     font-size: 3rem;
-    text-shadow: 3px 3px#515b5679;
+    text-shadow: 3px 3px #515b5679;
     position: absolute;
     bottom: 15px;
+    /* 中央揃え */
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* 以下セクション.no1 */
 #no1{
-    width: 80%;
     margin: 5% auto 10% auto;
     display: flex;
 }
@@ -135,7 +146,6 @@ h1{
 
 /* 以下セクション.no2 */
 #no2 {
-    width: 80%;
     margin: 0 auto 20% auto;
     display: flex;
     height: 100vh; /* 画面全体に合わせる */
@@ -210,18 +220,23 @@ footer{
     background-color: #1a1c1b;
 }
 footer h2{
-    padding-top: 10%;
-    margin: 10% 5% 0 10%;
-    font-size: 3rem;
+    font-size: 2rem;
+    padding-top: 13%;
 }
-.ft-nav{
-    width: 30%;
+.ft{
+    width: 80%;
     display: flex;
     justify-content: space-between;
-    margin: 0 0 10% 60%;
+    margin: 0 auto;
 }
-.ft-nav p a{
-    font-size: 1.6rem
+.ft-nav ul{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10% auto 10% auto;
+}
+.ft-nav ul li a{
+    font-size: 1.5rem;
 }
 footer small{
     display: block;
@@ -230,3 +245,12 @@ footer small{
     text-align: center;
 }
 
+
+ /* 全要素に枠をつける（デバッグ用） */
+/* * {
+outline: 1px solid red;
+}
+
+html, body {
+overflow-x: hidden;
+} */
